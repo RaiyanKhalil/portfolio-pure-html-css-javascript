@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="default.css"></link>
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <title>RaiyaKhalil</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
                     </div>
 
                     <ul id="navigation">
-                        <li><a href="#">Contact</a></li>
+                        <li>Contact</li>
                     </ul>
                 </div>
 
@@ -33,10 +34,10 @@
                     <img id="profile_pic" src="Images/Raiyan.jpg">
                     <h5 style="text-align: center; line-height: 0;">Personalized Theme</h5>
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
 					<p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
@@ -48,7 +49,7 @@
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
                             <h3>What I Do</h3>
-                            <p>I was a lead developer in a past life, now I enjoy teaching courses.</p>
+                            <p>Develop application using React/React-Native</p>
                             <div id="corner-bl" class="corner"></div>
                             <div id="corner-br" class="corner"></div>
                         </div>
@@ -65,27 +66,27 @@
             <div class="about-wrapper">
                 <div class="about-me">
                     <h4>More about me</h4>
-					<p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+					<p>I build new projects just to tickle my brain and love working with new technologies.</p>
 
-					<p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
+					<!-- <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p> -->
                 
                     <hr>
 
                     <h4>TOP EXPERTISE</h4>
 
-                    <p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+                    <p>Fullstack developer with primary focus on Django + React/React-Native: <a target="_blank" href="resume.pdf">Download Resume</a></p>
 
                     <div id="skills">
 						<ul>
-							<li>Python</li>
+							<li>React/React-Native</li>
 							<li>Django</li>
 							<li>JavaScript</li>
-							<li>React</li>
-							<li>Postgres</li>
+							<li>Python</li>
+							<li>Mysql</li>
 						</ul>
 
 						<ul>
-							<li>Google Maps API</li>
+							<li>C/C++</li>
 							<li>JS Charts</li>
 							<li>AWS (RDS/S3)</li>
 							<li>Heroku</li>
@@ -113,6 +114,7 @@
                     <div class="post-preview">
                         <h6 class="post-tittle">Doctor Finder</h6>
                         <p class="post-intro">A personal project, where people can search for doctors near their location, look it up in the map and also book an appointment.</p>
+                        <a target="_blank" href="https://github.com/RaiyanKhalil/doctornextdoor">Github Link</a>
                     </div>
                 </div>
 
@@ -121,6 +123,7 @@
                     <div class="post-preview">
                         <h6 class="post-tittle">Dui</h6>
                         <p class="post-intro">A game built using react-native, which combines the concept of Solitaire and 2048. It is an offline game.</p>
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.reikriya.dui">Playstore Link</a>
                     </div>
                 </div>
 
@@ -129,6 +132,7 @@
                     <div class="post-preview">
                         <h6 class="post-tittle">Niyo</h6>
                         <p class="post-intro">A Bengali word game inspired from the game Letterpress, built using react-native. This is a turnbased online game.</p>
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.reikriya.niyo">Playstore Link</a>
                     </div>
                 </div>
 
@@ -138,9 +142,28 @@
 
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Connect with me</h3>
+
+            <form id="contact-form">
+                <a name="contact"></a>
+
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
 
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
